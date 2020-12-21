@@ -1,0 +1,13 @@
+.card{
+    padding-left: 0%;
+    align-content: center;
+  }
+
+  .Login.card{
+    align-content: center;
+    justify-content: center;
+    background-color:white;
+    height: 300px;
+    border-style:none;
+    border-radius: 15px;
+  } 

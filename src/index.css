@@ -1,0 +1,38 @@
+.nav-wrapper{
+  background-color:#37474f ;
+  }
+
+  .slider .btn {
+    margin-top: 20px;
+  }
+  
+  .section-search input {
+    padding: 5px !important;
+    font-size: 18px !important;
+    width: 90% !important;
+    border: #f4f4f4 3px solid !important;
+  }
+  
+  .section-follow .fa-4x {
+    margin: 5px 10px;
+  }
+  
+  .section-contact h5 {
+    margin-bottom: 30px;
+  }
+
+  .container .row {
+    margin: 0 auto;
+  }
+  .waves-effect{
+    position: relative;
+    width: -webkit-fill-available;
+  }
+  .btn{
+    background-color:darkslategray!important;
+    align-content: center;
+    justify-content: center;
+  }
+
+  
+  
