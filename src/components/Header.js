@@ -58,6 +58,28 @@ class Header extends React.Component{
                 <Home />
                 <Journals />
                 <Contact />
+                {/* <section class="section section-follow teal darken-2 white-text center">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col s12">
+                          <h4>Follow us on social media for special offers</h4>
+                          <a class="waves-effect waves-light btn"> <i class = "fa fa-cloud small"></i></a>
+                          <a href="htttps://twitter.com" target="_blank" class="white-text">
+                            <i class="fab fa-twitter fa-4x"></i>
+                          </a>
+                          <a href="htttps://linkedin.com" target="_blank" class="white-text">
+                            <i class="fab fa-linkedin fa-4x"></i>
+                          </a>
+                          <a href="htttps://googleplus.com" target="_blank" class="white-text">
+                            <i class="fab fa-google-plus fa-4x"></i>
+                          </a>
+                          <a href="htttps://pinterest.com" target="_blank" class="white-text">
+                            <i class="fab fa-pinterest fa-4x"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </section> */}
                 <footer class="section teal darken-2 white-text center">
                   <p class="flow-text">BestBuy &copy; 2020</p>
                 </footer>

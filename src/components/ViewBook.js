@@ -65,7 +65,6 @@ class ViewBook extends React.Component{
             <h6 ><b>Description :  </b>{this.state.desc}</h6>
             <h6 ><b>ID : </b>{this.state.id}</h6>
             <br/>
-            <br/>
             <div class="col s6"><a class="btn">Buy Now</a></div>
           </div>
           </div>
