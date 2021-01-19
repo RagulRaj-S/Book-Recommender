@@ -12,6 +12,7 @@ class ViewBook extends React.Component{
             author: '',
             bookType: '',
             desc: '',
+            link:'',
             img: ''
          }
         const id = this.props.location.state.id;
@@ -26,6 +27,7 @@ class ViewBook extends React.Component{
             author: data.author,
             bookType: data.bookType,
             desc: data.desc,
+            link:data.link,
             img: data.img
         })
         console.log(this.state.bookName)
@@ -72,17 +74,17 @@ class ViewBook extends React.Component{
             <h6 ><b>ID : </b>{this.state.id}</h6>
             &nbsp;&nbsp;
             <br/>
-           <a class="btn-large teal">Buy Now</a></div>
+           <a class="btn-large teal" href={this.state.link}>Buy Now</a></div>
           </div>
           </div>
           </body>
-          <footer className="page-footer teal">
+          {/* <footer className="page-footer teal">
           <div className="footer-copyright">
             <div class="container center-align">
             <span>©2020 Book Worms Rack</span>
             </div>
           </div>
-        </footer>
+        </footer> */}
             
           </div>
         )

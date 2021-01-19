@@ -24,7 +24,7 @@ class Home extends React.Component{
                   <img src={book1} alt=""/>
                   <div class="caption center-align">
                     <h2 class="black-text">Take Your Books!</h2>
-                    <h5 class="black-text text-lighten-3 hide-on-small-only">A Room without a book is like a body without Soul!</h5>
+                    <h5 class="black-text text-lighten-3 hide-on-small-only">If you dont like to read, you haven't found the right book!</h5>
                   </div>
                 </li>
               </ul>

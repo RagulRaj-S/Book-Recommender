@@ -12,6 +12,7 @@ export class Admin extends React.Component {
     desc: '',
     imgName:'',
     id:'',
+    link:'',
     img: null
 }
  
@@ -28,6 +29,7 @@ componentDidMount() {
                   author: change.doc.data().author,
                   bookType: change.doc.data().bookType,
                   desc: change.doc.data().desc,
+                  link: change.doc.data().link,
                   img: change.doc.data().img
               })
           }
@@ -53,9 +55,9 @@ handleImg = (e) => {
   }
 }
 
-addProduct = (bookName,author,bookType,desc,id,img) => {
+addProduct = (bookName,author,bookType,desc,id,link,img) => {
   const storage = fire.storage();
-  if (bookName !== '' && author !== '' && bookType !== '' && desc !== '' && img !== '' && id !== ''){
+  if (bookName !== '' && author !== '' && bookType !== '' && desc !== '' && img !== '' && id !== '' && link !== ''){
   const uploadtask = storage.ref(`images/${img.name}`).put(img);
   uploadtask.on('state_changed', snapshot => {
       const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
@@ -70,6 +72,7 @@ addProduct = (bookName,author,bookType,desc,id,img) => {
               author,
               bookType,
               desc,
+              link,
               img: url
           })
       })
@@ -81,6 +84,7 @@ addProduct = (bookName,author,bookType,desc,id,img) => {
     desc: '',
     imgName: '',
     id:'',
+    link:'',
     img: null
   })
   alert("Book has been uploaded");
@@ -95,6 +99,7 @@ else{
     desc: '',
     imgName: '',
     id:'',
+    link:'',
     img: null
   })
   M.toast({html: 'Please, Fill all the fields!', classes: 'red'});
@@ -103,7 +108,7 @@ else{
 
 handleSubmit = (e) => {
   e.preventDefault();
-  this.addProduct(this.state.bookName, this.state.author,this.state.bookType, this.state.desc,this.state.id, this.state.img);
+  this.addProduct(this.state.bookName, this.state.author,this.state.bookType, this.state.desc,this.state.id,this.state.link,this.state.img);
   document.getElementById('file').value = '';
 }
 
@@ -134,14 +139,6 @@ deletePost = (key, imgurl) => {
         return(
           <div class="Admin">
           <header className="main-head">
-          {/* <nav>
-            <div class="nav-wrapper">
-              <a href="#" class="brand-logo center">BestBuy</a>
-              <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><button class="btn" onClick={this.logout}>Logout</button></li>
-              </ul>
-            </div>
-          </nav> */}
             <ul class="sidenav" id="Admin">
               <li>
               <a class="waves-effect waves-light btn">Logout</a>
@@ -167,7 +164,7 @@ deletePost = (key, imgurl) => {
                  <div class="input-field col s6">
                 <i class="material-icons prefix">notes</i>
                  <input name="bookType" id="bookType" type="text" class="validate" onChange={this.handleChange} value={this.state.bookType}/>
-                 <label for="bookType">Book Type</label>
+                 <label for="bookType">Book Genre</label>
                  </div>
                  <div class="input-field col s6">
                 <i class="material-icons prefix">mode_edit</i>
@@ -178,6 +175,11 @@ deletePost = (key, imgurl) => {
                 <i class="material-icons prefix">notes</i>
                  <input name="id" id="id" type="number" class="validate" onChange={this.handleChange} value={this.state.id}/>
                  <label for="id">ID</label>
+                 </div>
+                 <div class="input-field col s6">
+                <i class="material-icons prefix">link</i>
+                 <input name="link" id="link" type="text" class="validate" onChange={this.handleChange} value={this.state.link}/>
+                 <label for="link">Link</label>
                  </div>
                  <div class="file-field input-field">
                     <div class="btn">

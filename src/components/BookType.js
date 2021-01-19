@@ -33,12 +33,52 @@ class BookType extends React.Component{
                 "The Bahamas": null,
               }
             });
+        
+        var type;
+        const ref = this.props.match.path
+        const biography = "/biography";
+        const fairy = "/fairy";
+        const suspense = "/suspense";
+        const reference = "/reference";
+        const fantasy = "/fantasy";
+        const history = "/history";
+        const horror = "/horror";
+        const scifi = "/scifi";
+        const travelogue = "/travelogue";
+        const essay = "/essay";
+        const poetry = "/poetry";
+        const philosophy = "/philosophy";
+        
+        if(ref===biography)
+        type = "biography";
+        if(ref===fairy)
+        type = "fairy";
+        if(ref===suspense)
+        type = "suspense";
+        if(ref===reference)
+        type = "reference";
+        if(ref===fantasy)
+        type = "fantasy";
+        if(ref===history)
+        type = "history";
+        if(ref===horror)
+        type = "horror";
+        if(ref===scifi)
+        type = "scifi";
+        if(ref===travelogue)
+        type = "travelogue";
+        if(ref===essay)
+        type = "essay";
+        if(ref===poetry)
+        type = "poetry";
+        if(ref===philosophy)
+        type = "philosophy";
 
-        const result = this.props.match.path
-        if(result == "/crime")
-        {
+        // console.log(result)
+        // if(result === "/horror")
+        // {
         const temp = this.state.books;
-        fire.firestore().collection('books').where('bookType','==','ethics').onSnapshot(snapshot => {
+        fire.firestore().collection('books').where('bookType','==',type).onSnapshot(snapshot => {
             let changes = snapshot.docChanges();
             changes.forEach(change => {
                 if (change.type === "added") {
@@ -49,6 +89,7 @@ class BookType extends React.Component{
                         author: change.doc.data().author,
                         bookType: change.doc.data().bookType,
                         desc: change.doc.data().desc,
+                        link: change.doc.data().link,
                         img: change.doc.data().img
                     })
                 }
@@ -57,7 +98,7 @@ class BookType extends React.Component{
                 })
             })
         })
-    }
+    // }
     }
 
     render(){

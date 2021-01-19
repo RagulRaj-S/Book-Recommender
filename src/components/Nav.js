@@ -24,7 +24,7 @@ class Search extends React.Component{
                         <a href="home">Home</a>
                       </li>
                       <li>
-                        <a href="/">Journals</a>
+                        <a href="/">Genre</a>
                       </li>
                       <li>
                         <a href="books">Books</a>
@@ -42,7 +42,7 @@ class Search extends React.Component{
                     <a href="home">Home</a>
                   </li>
                   <li>
-                    <a href="journals">Journals</a>
+                    <a href="/">Genre</a>
                   </li>
                   <li>
                     <a href="books">Books</a>

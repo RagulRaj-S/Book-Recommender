@@ -62,6 +62,7 @@ class Books extends React.Component{
                         author: change.doc.data().author,
                         bookType: change.doc.data().bookType,
                         desc: change.doc.data().desc,
+                        link: change.doc.data().link,
                         img: change.doc.data().img
                     })
                 }
@@ -87,6 +88,7 @@ class Books extends React.Component{
                         author: change.doc.data().author,
                         bookType: change.doc.data().bookType,
                         desc: change.doc.data().desc,
+                        link: change.doc.data().link,
                         img: change.doc.data().img
                     })
                     this.setState({
@@ -110,6 +112,7 @@ class Books extends React.Component{
                        author: change.doc.data().author,
                        bookType: change.doc.data()  .bookType,
                        desc: change.doc.data().desc,
+                       link: change.doc.data().link,
                        img: change.doc.data().img
                    })
                }

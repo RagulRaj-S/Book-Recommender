@@ -42,15 +42,24 @@ import Nav from './components/Nav';
        <Route exact path="/">
           <Header />
         </Route>
-      <Route path="/login">
+      <Route path="/ostrich">
           {this.state.user ? (<Admin />) : (<Login />)}
       </Route>
-      <Route path="/Home" component={Header}/>
+      <Route path="/home" component={Header}/>
       <Route path="/books" component={Books}/>
       <Route path="/book" component={ViewBook} id/>
-      <Route path="/romantic" component={BookType} />
-      <Route path="/crime" component={BookType} />
+      <Route path="/biography" component={BookType} />
+      <Route path="/fairy" component={BookType} />
+      <Route path="/suspense" component={BookType} />
+      <Route path="/reference" component={BookType} />
+      <Route path="/fantasy" component={BookType} />
+      <Route path="/historical" component={BookType} />
       <Route path="/horror" component={BookType} />
+      <Route path="/scifi" component={BookType} />
+      <Route path="/travelogue" component={BookType} />
+      <Route path="/essay" component={BookType} />
+      <Route path="/poetry" component={BookType} />
+      <Route path="/philosophy" component={BookType} />
       </Router>
     );  
     }
