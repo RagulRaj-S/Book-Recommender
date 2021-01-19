@@ -43,14 +43,14 @@ class Login extends React.Component{
     render(){
     return(
         <div class="Login">
-                 <nav>
+                 {/* <nav>
                      <div class="nav-wrapper">
                      <a href="#" class="brand-logo center">Administrator</a>
                     <ul id="nav-mobile" class="left hide-on-med-and-down">
                          <li><a href="#">BuyBest</a></li>
                      </ul>
                     </div>
-                 </nav>
+                 </nav> */}
                  <p class="flow-text center-align">Admin Login</p>
                 <div className="container"> 
                 <div className="card hoverable"> 
@@ -66,7 +66,7 @@ class Login extends React.Component{
                         <label for="password">Password</label>
                         </div>
                     </div>
-                      <button class="btn waves-effect col s6" type="submit" name="action" onClick={this.login}>Login
+                      <button class="btn waves-effect teal col s6" type="submit" name="action" onClick={this.login}>Login
                          <i class="material-icons right">send</i>
                      </button>
                    </div> 

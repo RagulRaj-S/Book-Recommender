@@ -134,14 +134,14 @@ deletePost = (key, imgurl) => {
         return(
           <div class="Admin">
           <header className="main-head">
-          <nav>
+          {/* <nav>
             <div class="nav-wrapper">
               <a href="#" class="brand-logo center">BestBuy</a>
               <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><button class="btn" onClick={this.logout}>Logout</button></li>
               </ul>
             </div>
-          </nav>
+          </nav> */}
             <ul class="sidenav" id="Admin">
               <li>
               <a class="waves-effect waves-light btn">Logout</a>
@@ -211,8 +211,8 @@ deletePost = (key, imgurl) => {
                 </div>
                 <div class="card-content">
                 <p>{book.bookName}</p>
-                <p>{book.id}</p>
-                <p>{book.docId}</p>
+                {/* <p>{book.id}</p>
+                <p>{book.docId}</p> */}
                 <button class = 'btn btn-danger' onClick={this.deletePost.bind(this, book.docId, book.img)}>delete</button>
                 </div>
 

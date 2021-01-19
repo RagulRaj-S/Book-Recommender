@@ -8,6 +8,7 @@ import Books from './components/Books'
 import { BrowserRouter as Router, Route, withRouter } from "react-router-dom";
 import ViewBook from './components/ViewBook';
 import BookType from './components/BookType';
+import Nav from './components/Nav';
 
  class App extends React.Component{
    constructor(props)
@@ -37,12 +38,14 @@ import BookType from './components/BookType';
    render(){
     return(
       <Router>
+        <Nav />
        <Route exact path="/">
           <Header />
         </Route>
       <Route path="/login">
           {this.state.user ? (<Admin />) : (<Login />)}
       </Route>
+      <Route path="/Home" component={Header}/>
       <Route path="/books" component={Books}/>
       <Route path="/book" component={ViewBook} id/>
       <Route path="/romantic" component={BookType} />

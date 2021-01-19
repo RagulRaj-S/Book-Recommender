@@ -46,29 +46,44 @@ class ViewBook extends React.Component{
         
         return(
             <div className="viewBook">
-            <nav>
-                <div class="nav-wrapper">
-                <a href="#" class="brand-logo center">BuyBest</a>
-                </div>
-            </nav>
             <body>
             <h1 class="align center"/>
             <div class="container">
             <div class="row">
+            {/* <div class="col s6"> */}
+            {/* <img class="responsive-img" src={this.state.img} alt="Uploaded images" height="300" width="300"/> */}
+            {/* <div class="container">
+              <div class="row"> */}
+                <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src={this.state.img || 'http://via.placeholder.com/500*500'} alt="images" height="300" width="400"/>
+                    </div>
+                </div>
+                </div>
+              {/* </div>
+            </div> */}
+            {/* </div> */}
             <div class="col s6">
-            <img class="responsive-img" src={this.state.img} alt="Uploaded images" height="300" width="300"/>
-            </div>
-            
             <b><h3 class="flow-text">{this.state.bookName}</h3></b><br/>
             <h6 ><b>Author : </b>{this.state.author}</h6>
             <h6 ><b>Type : </b>{this.state.bookType}</h6>
             <h6 ><b>Description :  </b>{this.state.desc}</h6>
             <h6 ><b>ID : </b>{this.state.id}</h6>
+            &nbsp;&nbsp;
             <br/>
-            <div class="col s6"><a class="btn">Buy Now</a></div>
+           <a class="btn-large teal">Buy Now</a></div>
           </div>
           </div>
           </body>
+          <footer className="page-footer teal">
+          <div className="footer-copyright">
+            <div class="container center-align">
+            <span>©2020 Book Worms Rack</span>
+            </div>
+          </div>
+        </footer>
+            
           </div>
         )
     }
