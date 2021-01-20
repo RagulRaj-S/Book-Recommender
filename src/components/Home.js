@@ -21,7 +21,7 @@ class Home extends React.Component{
             <section class="slider" id="home">
               <ul class="slides">
                 <li>
-                  <img src={book1} alt=""/>
+                  <img class="responsive-img" src={book1} alt=""/>
                   <div class="caption center-align">
                     <h2 class="black-text">Take Your Books!</h2>
                     <h5 class="black-text text-lighten-3 hide-on-small-only">If you dont like to read, you haven't found the right book!</h5>

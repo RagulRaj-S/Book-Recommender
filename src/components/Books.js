@@ -134,16 +134,14 @@ class Books extends React.Component{
                         <input class="white grey-text autocomplete" placeholder="Search..." type="search" id="autocomplete-input" name="data" id="data" onChange={this.handleChange} value={this.state.data}/>
                     </div>
                     </div>
-                    <div class="butt col s6 align-left">
-                      <button class="btn s6 black-text white" type="submit" name="action" onClick={this.handleSubmitForBookName}>Search by book name
-                         <i class="material-icons right">send</i>
-                     </button>
-                     </div>
-                     <div className="but col s6 align-right">
-                      <button className="btn col s6 black-text white" type="submit" name="action" onClick={this.handleSubmitForAuthorName}>Search by author's name
-                         <i class="material-icons right">send</i>
-                     </button>
-                     </div>
+                    <div class="col s5">
+                    <button class="btn waves-effect white teal-text" type="submit" name="action" onClick={this.handleSubmitForBookName}>By Book
+                        <i class="material-icons right">send</i>
+                    </button></div>
+                     <div class="col s5">
+                     <button class="btn waves-effect white teal-text" type="submit" name="action" onClick={this.handleSubmitForAuthorName}>By Author
+                        <i class="material-icons right">send</i>
+                    </button></div>
                 </div>
                 </div>
             </section>

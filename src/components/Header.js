@@ -18,6 +18,7 @@ class Header extends React.Component{
           // const mb = document.querySelectorAll('.materialboxed');
           // M.Materialbox.init(mb, {});
         return(
+          // <div class="container">
             <header className="main-head">
                 {/* <Nav /> */}
                 <Home />
@@ -27,6 +28,7 @@ class Header extends React.Component{
                   <p class="flow-text">BestBuy &copy; 2020</p>
                 </footer>
               </header>
+          // </div>
     );
     }
 }

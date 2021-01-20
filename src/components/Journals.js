@@ -71,7 +71,7 @@ class Journals extends React.Component{
                         <img src={biography || 'http://via.placeholder.com/300*150'} alt="images" height="300" width="400"/>
                     </div>
                     <div class="card-content">
-                        <p>Biography/Auto-Biography</p>
+                        <p>Biography</p>
                     </div>
                 </div>
                 </div>
@@ -178,7 +178,7 @@ class Journals extends React.Component{
                 <div class="col s12 m4">
                 <div class="card hoverable" onClick={() => this.viewBook("/philosophy")}>
                     <div class="card-image">
-                        <img src={philosophy || 'http://via.placeholder.com/300*150'} alt="images" height="300" width="400"/>
+                        <img src={philosophy || 'http://via.placeholder.com/350*150'} alt="images" height="300" width="400"/>
                     </div>
                     <div class="card-content">
                         <p>Philosophy</p>
