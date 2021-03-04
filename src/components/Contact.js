@@ -57,9 +57,7 @@ class Contact extends React.Component{
                   <div class="card-panel grey lighten-3 center">
                     <i class="material-icons medium">email</i>
                     <h5>Contact Us</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus sed praesentium delectus. Sit, mollitia
-                      quo. Veniam repellat voluptas ipsum doloremque?</p>
-                  </div>
+                   </div>
                 </div>
                 <div class="col s12 m6">
                   <div class="card-panel grey lighten-3">
